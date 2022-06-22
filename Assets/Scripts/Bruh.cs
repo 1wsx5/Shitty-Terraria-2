@@ -16,7 +16,7 @@ public class Bruh : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         Debug.Log(horizontal);
         Vector2 position = transform.position;
-        position.x = position.x + 0.1f;
+        position.x = position.x + 0.1f * horizontal;
         transform.position = position;
     }
 }
